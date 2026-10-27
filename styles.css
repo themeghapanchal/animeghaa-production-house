@@ -18,3 +18,29 @@
 /* Fifth portfolio category and navigation spacing. */
 @media(min-width:1051px){.disciplines{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}.explore-work .discipline img{height:145px}.explore-work .discipline h3{font-size:1.1rem}}
 @media(max-width:1200px) and (min-width:1001px){.header-inner{grid-template-columns:55px auto 1fr;gap:18px}.menu-button{display:block;grid-column:3;grid-row:1;justify-self:end;background:white;border:1px solid var(--line);border-radius:4px;padding:8px 13px;color:var(--purple);font-size:.85rem;font-weight:700}.nav{grid-column:1/-1;grid-row:2;justify-content:flex-end;flex-wrap:wrap;padding:14px 0 0;gap:12px 24px}.nav:not(.is-open){display:none}.nav.is-open{display:flex}}
+
+/* Preserve contrast on the header contact button in every interaction state. */
+.nav a.contact-nav,
+.nav a.contact-nav:visited,
+.nav a.contact-nav:hover,
+.nav a.contact-nav:focus,
+.nav a.contact-nav:active {
+  color: #fff;
+  background: var(--purple);
+}
+.nav a.contact-nav:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 4px;
+}
+
+/* Original handwritten section heading. */
+.explore-work .section-head{display:block}
+.explore-work .handwritten-heading{margin:0 0 16px;line-height:1}
+.explore-work .handwritten-heading img{display:block;width:min(100%,760px);height:auto;max-width:100%;object-fit:contain}
+.explore-work .section-head>p{max-width:620px;margin:0}
+@media(max-width:600px){.explore-work .handwritten-heading{margin-bottom:12px}.explore-work .handwritten-heading img{width:100%}}
+
+/* Align the visible lettering, excluding transparent canvas margins. */
+.explore-work .handwritten-heading{position:relative;width:min(340px,100%);aspect-ratio:775 / 470;overflow:hidden;margin:0 0 20px}
+.explore-work .handwritten-heading img{position:absolute;width:264.258065%;max-width:none;height:auto;left:-87.741935%;top:-5.319149%}
+@media(max-width:600px){.explore-work .handwritten-heading{width:min(300px,100%);margin-bottom:16px}.explore-work .handwritten-heading img{width:264.258065%}}
