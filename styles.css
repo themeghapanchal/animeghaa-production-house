@@ -33,14 +33,9 @@
   outline-offset: 4px;
 }
 
-/* Original handwritten section heading. */
+/* Handwritten artwork embedded in the page, with a fitted SVG viewport. */
 .explore-work .section-head{display:block}
-.explore-work .handwritten-heading{margin:0 0 16px;line-height:1}
-.explore-work .handwritten-heading img{display:block;width:min(100%,760px);height:auto;max-width:100%;object-fit:contain}
+.explore-work .handwritten-heading{width:min(340px,100%);margin:0 0 20px;line-height:1}
+.explore-work .work-heading-art{display:block;width:100%;height:auto;overflow:visible}
 .explore-work .section-head>p{max-width:620px;margin:0}
-@media(max-width:600px){.explore-work .handwritten-heading{margin-bottom:12px}.explore-work .handwritten-heading img{width:100%}}
-
-/* Align the visible lettering, excluding transparent canvas margins. */
-.explore-work .handwritten-heading{position:relative;width:min(340px,100%);aspect-ratio:775 / 470;overflow:hidden;margin:0 0 20px}
-.explore-work .handwritten-heading img{position:absolute;width:264.258065%;max-width:none;height:auto;left:-87.741935%;top:-5.319149%}
-@media(max-width:600px){.explore-work .handwritten-heading{width:min(300px,100%);margin-bottom:16px}.explore-work .handwritten-heading img{width:264.258065%}}
+@media(max-width:600px){.explore-work .handwritten-heading{width:min(300px,100%);margin-bottom:16px}}
